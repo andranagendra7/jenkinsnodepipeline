@@ -1,0 +1,16 @@
+#!/usr/bin/env groovy
+
+
+pipeline {
+
+        agent {
+                  node() {
+                         }
+               }
+        stages {
+                 stage('build') {
+                                 steps {
+                                         echo "check the maven version"
+                                       }
+                                 }
+               }
